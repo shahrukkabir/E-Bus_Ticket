@@ -68,7 +68,7 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     const couponInputValue = couponInputField.value;
     let couponSave = 0;
 
-    if (couponInputValue !== "NEW50" && couponInputValue !== "Couple 20") {
+    if (couponInputValue !== "NEW50" && couponInputValue !== "SRK15") {
         alert("Your Provided Coupon Code Is Not Valid 😕")
         return couponInputField.value = ""
 
@@ -77,7 +77,7 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     if (couponInputValue === "NEW50") {
         couponSave = totalPrice * 0.15;
 
-    } else if (couponInputValue === "Couple 20") {
+    } else if (couponInputValue === "SRK15") {
         couponSave = totalPrice * 0.20;
 
     }

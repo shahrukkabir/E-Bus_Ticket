@@ -34,6 +34,8 @@
                         mobileMenu: '#f7f8f8',
                         body: '#03071299',
                         buttonColor: 'rgba(29, 209, 0, 0.15)',
+                        myCol: 'rgba(0, 76, 232, 0.05)',
+                        myCol2: 'rgba(255, 76, 30, 0.05)',
                     },
                     fontFamily: {
                         RaleWay: 'Raleway',
@@ -49,7 +51,7 @@
     <!-- Header Section content -->
     <header class="w-11/12 mx-auto">
         <!-- Navigation Menu Content -->
-        <nav class="flex justify-between items-center mt-2 py-2 relative">
+        <nav class="flex justify-between items-center py-8 relative">
             <div>
                  <h2 class="text-4xl font-extrabold">P-Ticket</h2>
             </div>
@@ -80,7 +82,7 @@
             </ul>
         </nav>
         <!-- Home Banner content -->
-        <section id="banner-section" class="my-4">
+        <section id="banner-section" class="my-3">
             <!-- Slide 01 -->
             <div class="bg-[url(./images/banner.png)] overflow-hidden h-[75vh] bg-center bg-no-repeat bg-cover rounded-2xl relative">
                 <div class="absolute top-0 left-0 w-full h-full bg-black/45"></div>
@@ -113,7 +115,6 @@
         </section>
     </header>
 
-
     <main class="mt-10">
         <!-- statistics section start -->
         <section id="statistics"class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-9/12 w-11/12 mx-auto sm:-mt-20">
@@ -143,63 +144,38 @@
                 </div>
             </div>
         </section>
-
         <!-- Coupon Section Start -->
-        <section id="coupon-section" class="my-20 w-11/12 mx-auto hidden">
+        <section id="coupon-section" class="my-20 w-11/12 mx-auto">
             <!-- section heading -->
             <div id="section-heading" class="text-center">
-                <h3 class="sm:text-5xl text-4xl font-bold text-secondary capitalize">
-                    Best Offers for you
-                </h3>
+                <h3 class="sm:text-5xl text-4xl font-bold text-secondary capitalize">Best Offers for you</h3>
             </div>
             <!-- coupon cards -->
             <div class="grid lg:grid-cols-2 gap-10 my-10">
-                <div
-                    class="bg-couponOne px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
-                    <div class="z-10">
-                        <h3 class="sm:text-6xl text-4xl sm:text-left text-center font-extrabold text-secondary">15% OFF
-                        </h3>
-                        <h4 class="sm:text-2xl text-lg text-center sm:text-left font-semibold sm:py-1">on
-                            your next purchase</h4>
-                        <p class="text-xl tracking-widest text-body">
-                            use by February 2024
-                        </p>
+                <!-- coupon 1 -->
+                <div class="bg-couponOne px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter overflow-hidden">
+                    <div>
+                        <h3 class="sm:text-6xl text-5xl sm:text-left text-center font-extrabold text-secondary">15% OFF</h3>
+                        <h4 class="sm:text-2xl text-lg text-center sm:text-left font-medium my-2 ">On your next purchase</h4>
+                        <p class="text-xl font-normal text-body mb-2">Use by January 2025</p>
                     </div>
-                    <div class="flex flex-col items-center justify-between h-full overflow-hidden">
-                        <span
-                            class="bg-white inline-block w-10 h-10 rounded-full absolute -top-5 sm:right-auto right-16"></span>
-                        <span
-                            class="inline-block border-2 border-dashed border-white h-full rounded-full absolute top-0 sm:right-auto right-20"></span>
-                        <span
-                            class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-5 sm:right-auto right-16"></span>
-                    </div>
-                    <div class="text-center z-10">
+                    <div class="divider divider-neutral lg:divider-horizontal"></div>
+                    <div class="text-center">
                         <h3 class="text-4xl font-extrabold text-secondary">NEW50</h3>
-                        <p class="text-lg text-body">Coupon Code</p>
+                        <p class="text-lg text-body mt-2 font-normal">Coupon Code</p>
                     </div>
                 </div>
-                <div
-                    class="bg-couponTwo px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
+                <!-- coupon 2 -->
+                <div class="bg-couponTwo px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter overflow-hidden">
                     <div>
-                        <h3 class="sm:text-6xl text-4xl sm:text-left text-center font-extrabold text-secondary">20% OFF
-                        </h3>
-                        <h4 class="sm:text-2xl text-lg text-center sm:text-left font-semibold sm:py-1">on your next
-                            purchase</h4>
-                        <p class="text-xl tracking-widest text-body">
-                            use by February 2024
-                        </p>
+                        <h3 class="sm:text-6xl text-5xl sm:text-left text-center font-extrabold text-secondary">20% OFF</h3>
+                        <h4 class="sm:text-2xl text-lg text-center sm:text-left font-medium my-2 ">On your next purchase</h4>
+                        <p class="text-xl font-normal text-body mb-2">Use by January 2025</p>
                     </div>
-                    <div class="flex flex-col items-center justify-between h-full overflow-hidden">
-                        <span
-                            class="bg-white inline-block w-10 h-10 rounded-full absolute -top-5 sm:right-auto right-16"></span>
-                        <span
-                            class="inline-block border-2 border-dashed border-white h-full rounded-full absolute top-0 sm:right-auto right-20"></span>
-                        <span
-                            class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-5 sm:right-auto right-16"></span>
-                    </div>
-                    <div class="text-center z-10">
-                        <h3 class="text-4xl font-extrabold text-secondary">Couple 20</h3>
-                        <p class="text-lg text-body">Coupon Code</p>
+                    <div class="divider divider-neutral lg:divider-horizontal"></div>
+                    <div class="text-center">
+                        <h3 class="text-4xl font-extrabold text-secondary">SRK15</h3>
+                        <p class="text-lg text-body mt-2 font-normal">Coupon Code</p>
                     </div>
                 </div>
             </div>
@@ -210,105 +186,84 @@
                 </button>
             </div>
         </section>
-
         <!-- Services Section Start -->
-        <section class="bg-mobileMenu py-20 rounded-t-3xl border-t-2 border-primary hidden">
+        <section class="bg-mobileMenu py-20 rounded-t-3xl border-t-2 border-primary">
             <!-- section heading -->
-            <div id="section-heading" class="text-center hidden">
-                <h3 class="lg:text-5xl md:text-4xl text-3xl font-bold text-secondary capitalize">
-                    Dublin Ticket Counter
-                </h3>
-                <p class="text-body font-Inter lg:w-2/5 md:w-4/5 w-11/12 mx-auto py-2">
+            <div id="section-heading" class="text-center ">
+                <h3 class="lg:text-5xl md:text-4xl text-3xl font-bold text-secondary capitalize">P.H Paribahan</h3>
+                <p class="text-body font-normal mt-6 leading-7 text-lg lg:w-2/5 md:w-4/5 w-11/12 mx-auto py-2">
                     Yes, you can run unit tests and view the results directly within the
                     app. The integrated testing features allow for a streamlined .
                 </p>
             </div>
             <!-- Current available Bus Services -->
-            <section class="w-11/12 mx-auto my-10 hidden">
-                <div
-                    class="bg-white sm:px-8 px-4 py-10 rounded-2xl shadow-sm font-Inter relative overflow-hidden grid sm:grid-cols-3 sm:gap-20 gap-10 justify-center items-center">
+            <section class="w-11/12 mx-auto my-10">
+                <div class="bg-myCol2 sm:px-8 px-4 py-10 rounded-2xl shadow-sm font-Inter relative overflow-hidden grid sm:grid-cols-3 sm:gap-20 gap-10 justify-center items-center">
+                    <!-- right section -->
                     <div class="sm:col-span-2">
-                        <div
-                            class="flex sm:flex-row flex-col justify-center sm:justify-between items-center sm:gap-0 gap-10">
-                            <div class="flex items-center gap-5">
-                                <i class="fa-solid fa-van-shuttle text-5xl"></i>
-                                <div>
-                                    <h3 class="sm:text-3xl text-lg font-bold text-secondary">
-                                        GreenLine Express Service
-                                    </h3>
-
-                                    <p class="text-lg text-body">Coach-009-WEB! Economic</p>
-                                </div>
+                        <!-- up part -->
+                        <div class="flex sm:flex-row flex-col justify-center sm:justify-between items-center sm:gap-0 gap-10">
+                            <!-- greenline paribahan -->
+                            <div class="flex items-center gap-4"> <i class="fa-solid fa-van-shuttle text-4xl"></i>
+                            <div>
+                                <h3 class="sm:text-2xl text-lg font-bold text-secondary">Greenline Paribahan</h3>
+                                <p  class="text-base font-normal text-body mt-0">Coach-009-WEB! Economic</p>
                             </div>
-                            <!-- available seat section -->
-                            <div
-                                class="bg-buttonColor text-primary p-5 sm:w-auto w-11/12 text-center rounded-xl text-lg font-medium font-Inter">
-                                <i class="fa-solid fa-couch"></i>
-                                <span id="available-seat">40</span>
-                                <span>Seats</span>
+                            </div>
+                            <!-- 40 seat left -->
+                            <div class="bg-buttonColor text-primary p-4 sm:w-auto w-11/12 text-center rounded-xl text-lg font-medium font-Inter">
+                                <i class="fa-solid fa-couch"></i> <span id="available-seat">40</span> <span>Seats Left</span>
                             </div>
                         </div>
-                        <div class="rounded-3xl bg-[#f7f8f8] p-5 mt-5">
-                            <li class="list-none font-semibold flex justify-between">
-                                <span>Route</span>
-                                <span>Dhaka - Sylhet</span>
-                            </li>
-                            <div class="border-b-2 my-4 border-dashed"></div>
-                            <li class="list-none font-semibold flex justify-between">
-                                <span>Departure Time</span>
-                                <span>9:00 PM</span>
-                            </li>
-                            <div class="border-b-2 my-4 border-dashed"></div>
-                            <li class="list-none font-semibold flex sm:flex-row flex-col gap-5  justify-between">
-                                <span class="bg-[#0307120d] p-5 rounded-3xl">Boarding Point - Laxmipur</span>
-                                <span class="bg-[#0307120d] p-5 rounded-3xl">Boarding Point - Laxmipur</span>
-                                <span class="bg-[#0307120d] p-5 rounded-3xl">Boarding Point - Laxmipur</span>
+                        <!-- down part -->
+                        <div class="rounded-2xl bg-gray-100 p-6 mt-6">
+                            <li class="list-none font-semibold flex justify-between"> <span>Route</span><span>Dhaka - Sylhet</span></li>
+                            <div class="border-b-2 my-4 border-gray-400  border-dashed"></div>
+                            <li class="list-none font-semibold flex justify-between"><span>Departure Time</span><span>9:00 PM</span></li>
+                            <div class="border-b-2 border-gray-400 my-4 border-dashed"></div>
+                            <li class="list-none font-semibold flex sm:flex-row flex-col gap-5 pt-3 justify-between">
+                                <span class="bg-gray-300 p-2 rounded-md text-center">Boarding Point - Laxmipur</span>
+                                <span class="bg-gray-300 p-2 rounded-md text-center">Dropping Point - Bogura</span>
+                                <span class="bg-gray-300 p-2 rounded-md text-center">Est. Time - 11 Hour</span>
                             </li>
                         </div>
                     </div>
+
+                    <!-- left section -->
                     <div class="flex sm:justify-evenly justify-center text-center items-center col-span-1">
                         <div class="sm:flex hidden flex-col items-center justify-between h-full overflow-hidden">
                             <span class="bg-mobileMenu inline-block w-10 h-10 rounded-full absolute -top-5 z-20"></span>
-                            <span
-                                class="border-primary border-dashed inline-block border-r-2 h-full absolute top-0"></span>
-                            <span
-                                class="bg-mobileMenu inline-block w-10 h-10 rounded-full absolute -bottom-5 z-10"></span>
+                            <span class="border-primary border-dashed inline-block border-r-2 h-full absolute top-0"></span>
+                            <span class="bg-mobileMenu inline-block w-10 h-10 rounded-full absolute -bottom-5 z-10"></span>
                         </div>
                         <div class="text-center justify-center items-center ">
-                            <i
-                                class="fa-solid fa-bangladeshi-taka-sign bg-primary text-white text-xl px-5 py-3 rounded-full"></i>
-                            <h3 class="text-2xl font-extrabold text-secondary my-1">
-                                550 Taka
-                            </h3>
+                            <i class="fa-solid fa-bangladeshi-taka-sign bg-primary text-white text-xl px-3 py-2 rounded-full"></i>
+                            <h3 class="text-2xl font-extrabold text-secondary my-1 mt-4"> 550 Taka </h3>
                             <p class="text-lg text-body font-semibold">Per Seat</p>
                         </div>
                     </div>
                 </div>
             </section>
 
+
+
+
             <!-- seat booking section -->
-            <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm sm:grid sm:grid-cols-3 gap-5 hidden">
-                <div
-                    class="sm:col-span-2  lg:border-r-2 md:border-r-2 border-none  lg:border-dashed border-[#0307124d]">
+            <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm sm:grid sm:grid-cols-3 gap-5">
+                <div class="sm:col-span-2  lg:border-r-2 md:border-r-2 border-none  lg:border-dashed border-[#0307124d]">
                     <div class="sm:mr-5 ">
-                        <h2 class="text-secondary sm:text-left text-center font-semibold text-2xl">
-                            Select Your Seat
-                        </h2>
+                        <h2 class="text-secondary sm:text-left text-center font-semibold text-2xl"> Select Your Seat </h2>
                         <div class="border-b-2 my-4 border-dashed"></div>
                         <div class="flex justify-between">
-                            <p>
-                                <i class="fa-solid fa-couch"></i>
-                                <span>Available</span>
-                            </p>
-                            <p class="text-primary font-semibold">
-                                <i class="fa-solid fa-couch"></i>
-                                <span>Selected</span>
+                            <p> <i class="fa-solid fa-couch"></i> <span>Available</span> </p>
+                            <p class="text-primary font-semibold"> <i class="fa-solid fa-couch"></i> <span>Selected</span>
                             </p>
                         </div>
                         <div class="border-b-2 my-4 border-dashed"></div>
                     </div>
+
                     <!-- seat section -->
-                    <section class="w-11/12 grid grid-cols-12 items-center sm:gap-y-5 sm:mr-20 font-Inter">
+                    <section class="w-11/12 grid grid-cols-12 items-center sm:gap-y-5 sm:mr-20 font-Inter ">
                         <!-- Front Seat -->
                         <p class="col-span-1 "></p>
                         <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
@@ -629,30 +584,25 @@
         </section>
     </main>
 
-    <footer class="bg-secondary text-white hidden">
+    <footer class="bg-secondary text-white">
         <div class="w-11/12 mx-auto py-20">
             <div class="flex sm:flex-row flex-col sm:gap-0 gap-5 justify-between items-center">
                 <div class="text-center sm:text-left">
-                    <div class="flex sm:justify-start justify-center items-center text-3xl font-semibold capitalize">
-                        <img width="50" src="./images/favicon.png" alt="" />
-                        <span>Dublin Bus</span>
-                    </div>
-                    <p class="font-Inter text-white/80 text-sm">
-                        Dublin Bus is a digital platform to make your <br />
-                        daily commuting better.
+                    <div> <h2 class="text-4xl font-extrabold">P-Ticket</h2></div>
+                    <p class="font-normal text-base mt-4 mb-8 sm:px-0 px-2 leading-7">
+                         P-Ticket is a digital platform to make your daily commuting better.
                     </p>
                 </div>
                 <div class="text-center">
-                    <h3 class="mb-2">Download our app</h3>
+                    <h3 class="mb-4">Download our app</h3>
                     <img src="./images/google.png" alt="" />
                 </div>
             </div>
-            <div class="border-b-[1px] mt-10 border-dashed border-white/50"></div>
-            <div class="mt-10 font-Inter flex sm:flex-row flex-col-reverse justify-between text-white/80">
-                <p class="text-center sm:text-left sm:mt-0 mt-10">@All Rights Reserved. Dublin Bus Services Limited 1912
-                    - 2024
+            <div class="border-b-[1px] mt-10 border-dashed border-white"></div>
+            <div class="mt-10 font-Inter flex sm:flex-row flex-col-reverse justify-between">
+                <p class="text-center text-sm font-normal sm:text-left sm:px-0 px-6 sm:mt-0 mt-10">@All Rights Reserved. Dublin Bus Services Limited 1912-2024
                 </p>
-                <ul class="flex sm:flex-row flex-col items-center gap-5">
+                <ul class="flex sm:flex-row flex-col font-normal items-center gap-5">
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Return & Refund Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
