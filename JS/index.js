@@ -12,12 +12,10 @@ const bookedSectionDefaultEl = document.getElementById("default-text")
 
 // Menu icons
 menuBtn.addEventListener('click', function () {
-    console.log(menuBtn.children[0]);
     menuBtn.children[0].classList.toggle("hidden")
     const menuCloseBtn = document.getElementById("close-icon");
     menuCloseBtn.classList.toggle("hidden")
     mobileMenuEl.classList.toggle("hidden")
-    mobileMenuEl.classList.toggle("flex")
 })
 
 let selectedSeat = []
