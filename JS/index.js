@@ -25,8 +25,9 @@ function handleSelectSeat(event) {
     const value = event.innerText
     if (selectedSeat.includes(value)) {
         return alert("Seat already added")
-    } else {
-        if (selectedSeat.length < 4) {
+    }
+    else{
+        if(selectedSeat.length < 4) {
             event.classList.add("bg-primary")
             event.classList.add("text-white")
 
@@ -46,19 +47,20 @@ function handleSelectSeat(event) {
             bookedSectionDefaultEl.classList.add("hidden")
 
             seatSelectedEl.innerHTML += `
-         <li class="text-base font-normal flex justify-between">
-            <span>${ value }</span>
-            <span>Economy</span>
-            <span>550</span>
-        </li>
-        `
+            <li class="text-base font-normal flex justify-between">
+                <span>${value}</span>
+                <span>Economy</span>
+                <span>550</span>
+            </li>
+            `
 
             // active coupon button if 4 seat is booked
             if (selectedSeat.length > 3) {
                 couponInputField.removeAttribute("disabled")
                 couponBtnEl.removeAttribute('disabled')
             }
-        } else {
+        } 
+        else{
             return alert("Maximum seat added")
         }
     }
@@ -88,7 +90,7 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     const showCouponPriceEl = document.getElementById("show-coupon-price");
     showCouponPriceEl.innerHTML = `
     <p>Discount</p>
-    <p><span>- BDT: </span> <span id="total-price">${ couponSave.toFixed(2) }</span></p>
+    <p><span>- BDT: </span> <span id="total-price">${couponSave.toFixed(2)}</span></p>
     `
 
 
